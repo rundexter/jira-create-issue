@@ -81,7 +81,6 @@ module.exports = {
         jira.addNewIssue({
             "fields": issue
         }, function (error, issue) {
-            console.log(error, issue);
 
             if (error)
                 this.fail(error);
