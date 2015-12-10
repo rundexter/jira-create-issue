@@ -73,6 +73,9 @@ module.exports = {
         var issue = this.issueObj(step);
         var auth = this.authParams(dexter);
 
+        if (!auth) 
+            return;
+
         var jira = new JiraApi(auth.protocol, auth.host, auth.port, auth.user, auth.password, auth.apiVers);
 
         jira.addNewIssue({
