@@ -4,23 +4,54 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "projectId",
+            "title":"Project ID"
+        },
+        {
+            "id": "summary",
+            "title":"Summary"
+        },
+        {
+            "id": "issueTypeId",
+            "title":"Issue Type"
+        },
+        {
+            "id": "assigneeName",
+            "title":"Assignee"
+        },
+        {
+            "id": "reporterName",
+            "title":"Reporter"
+        },
+        {
+            "id": "description",
+            "title":"Description"
+        },
+        {
+            "id": "priorityId",
+            "title":"Priority"
+        },
+        {
+            "id": "labels",
+            "title":"Labels"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "id",
+            "title":"Issue ID"
+        },
+        {
+            "id": "key",
+            "title":"Key"
+        },
+        {
+            "id": "self",
+            "title":"URL"
         }
-      */
     ],
+    "icon": "dex-jira",
     "title": "Jira Create Issue" /* Required.A display name for the module */
 }
